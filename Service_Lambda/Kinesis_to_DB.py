@@ -31,7 +31,7 @@ def lambda_handler(event, context):
     
     
     smsClient = boto3.client('sns')
-    mobile = "6466230205"
+    mobile = "6230205"
     
 	faceId='123'
     face_search_response = json_data['FaceSearchResponse']
@@ -79,7 +79,7 @@ def lambda_handler(event, context):
         dynamo_passcodes_table.put_item(Item=my_string)
         
     else:
-        phone_number_owner = '6466230205'
+        phone_number_owner = '***********'
         link_visitor_image = 'https://smart-door-trr.s3.amazonaws.com/' + filename
         
         
